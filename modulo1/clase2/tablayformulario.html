@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Esta es la primera web que estoy haciendo">
+		<meta name="keyworks" content="web,website">
+		<meta name="author" content="Alonso Perez">
+		<title>Hola mundo</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header class="cabecera">
+			<a href="#"><img id="logo" src="img/logo.png"></a>
+			<nav>
+				<a href="#inicio">Inicio</a>
+				<a href="#nosotros">Nosotros</a>
+				<a href="#productos">Productos</a>
+				<a href="#servicios">Servicios</a>
+				<a href="#galeria">Galeria</a>
+				<a href="#contactenos">Contactenos</a>
+			</nav>
+		</header>
+		<main>
+			<section id="inicio" class="banner" >
+				<img src="img/banner.jpg">
+			</section>
+			<section id="nosotros">
+				<div class="contenedor">
+					<h1><a href="#alonso">Apple es la mejor marca</a></h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</section>
+			<section id="productos">
+				<div class="contenedor" >
+					<h2>Productos</h2>
+				</div>
+
+			</section>
+			<section id="servicios">
+				<div class="contenedor">
+					<h2>Servicios</h2>
+					<table cellpadding="10" cellspacing="10" width="100%" border="1" " style="color: black">
+						<tr>
+							<th width="20%">dni</th>
+							<th width="50%">nombre</th>
+							<th width="30%">email</th>
+						</tr>
+						<tr>
+							<td align="center" bgcolor="black" height="50">42890190</td>
+							<td valign="top" colspan="2">Alonso Perez nuevocorreo17@gmail.com </td>
+							
+						</tr>
+						<tr>
+							<td rowspan="2">42890190</td>
+							<td>Alonso Perez</td>
+							<td>nuevocorreo17@gmail.com</td>
+						</tr>
+						<tr>
+							
+							<td>Alonso Perez</td>
+							<td>nuevocorreo17@gmail.com</td>
+						</tr>
+					</table>
+				</div>
+
+			</section>
+			<section  id="galeria">
+				<div class="contenedor">
+					<h2>Galeria</h2>
+					<form enctype="multipart/form-data" action="guardar.php" method="post" >
+						<input type="hidden" name="codigo" value="12345678">
+						<div>
+							<input type="text" name="dni" value="" placeholder="Escribe aqui tu dni" size="8" maxlength="8" required >
+						</div>
+						<div>
+							<input value="Alonso" type="text" name="nombre" placeholder="Escribe aqui tu nombre" minlength="1" >
+						</div>
+						<div>
+							<input type="text" name="apellido" placeholder="Escribe tu apellido" minlength="1" >
+						</div>
+						<div>
+							<input type="password" name="password" value=""  >
+						</div>
+						<div>
+							<input type="number" name="hijos" min="0" max="4" step="2" placeholder="Cantidad de hijos"   >
+						</div>
+						<div>
+							<input type="color" name="color" value="#ffffff"  >
+						</div>
+
+						<div>
+							<input type="date" value="2019-03-27" min="2019-03-01" max="2019-03-31" name="fecha"    >
+						</div>
+
+						<div>
+							<input type="month" name="mes"    >
+						</div>
+
+						<div>
+							<input type="week" name="semana"    >
+						</div>
+
+						<div>
+							<input type="email" name="email" value="nuevocorreo17@gmail.com"  disabled required   >
+						</div>
+						<div>
+							<input type="file" name="archivo" multiple  accept=".jpg,.pptx"  >
+						</div>
+						<div><input type="range" name="rango" min="0" max="10" step="2" >
+						</div>
+						<div>
+							<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="000-00-000">
+						</div>
+						<div>
+							<input type="time" name="hora" value="23:59">
+						</div>
+						<div>
+							<input type="url" name="url" value="" required>
+						</div>
+						<div>
+							<label>Audi</label><input type="checkbox" name="marca[]" checked value="audi"><br>
+							<input type="checkbox" name="marca[]" value="honda"><label>Honda</label><br>
+							<input type="checkbox" name="marca[]" value="suzuki"><label>Suzuki</label><br>
+							<input type="checkbox" name="marca[]" value="bmw"><label>BMW</label>
+						</div>
+						<div>
+							<input type="radio" checked name="sexo" value="masculino"><label>Masculino</label><br>
+							<input type="radio" name="sexo" value="femenino"><label>Femenino</label><br>
+							<input type="radio" name="sexo" value="otros"><label>Otros</label>
+						</div>
+						<div>
+							<textarea name="mensaje" rows="10" cols="20" placeholder="Mensaje"></textarea>
+						</div>
+						<div>
+							<select name="distritos1" required>
+								<option value="" >--Escoge tu distrito--</option>
+								<option value="pueblo libre">Pueblo LIbre</option>
+								<option value="callao">Callao</option>
+								<option value="jesus maria">Jesus Maria</option>
+								<option value="San Miguel">San Miguel</option>
+								<option value="San Juan de Miraflores">San Juan de Miraflores</option>
+								<option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+								<option value="Miraflores">Miraflores</option>
+								<option value="San Isidro">San Isidro</option>
+								<option value="Bellavista">Bellavista</option>
+								<option value="Magdalena">Magdalena</option>
+								<option value="Surco">Surco</option>
+								<option value="Lince">Lince</option>
+							</select>
+						</div>
+						<div>
+							<select name="distritos2" required multiple>
+								
+								<option value="pueblo libre">Pueblo LIbre</option>
+								<option value="callao">Callao</option>
+								<option value="jesus maria">Jesus Maria</option>
+								<option value="San Miguel">San Miguel</option>
+								<option value="San Juan de Miraflores">San Juan de Miraflores</option>
+								<option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+								<option value="Miraflores">Miraflores</option>
+								<option value="San Isidro">San Isidro</option>
+								<option value="Bellavista">Bellavista</option>
+								<option value="Magdalena">Magdalena</option>
+								<option value="Surco">Surco</option>
+								<option value="Lince">Lince</option>
+							</select>
+						</div>
+						<div>
+							<select name="distritos3" required>
+								<option value="" >--Escoge tu distrito--</option>
+								<optgroup label="Cono norte">
+									<option value="pueblo libre">Pueblo LIbre</option>
+								<option value="callao">Callao</option>
+								<option value="jesus maria">Jesus Maria</option>
+								<option value="San Miguel">San Miguel</option>
+								<option value="San Juan de Miraflores">San Juan de Miraflores</option>
+								</optgroup>
+								<optgroup label="cono sur">
+									<option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+									<option value="Miraflores">Miraflores</option>
+									<option value="San Isidro">San Isidro</option>
+									<option value="Bellavista">Bellavista</option>
+									<option value="Magdalena">Magdalena</option>
+									<option value="Surco">Surco</option>
+									<option value="Lince">Lince</option>
+								</optgroup>
+							</select>
+						</div>
+						<div>
+							<select name="distritos4" required multiple>
+									<option value="" >--Escoge tu distrito--</option>
+									<optgroup label="Cono norte">
+										<option value="pueblo libre">Pueblo LIbre</option>
+									<option value="callao">Callao</option>
+									<option value="jesus maria">Jesus Maria</option>
+									<option value="San Miguel">San Miguel</option>
+									<option value="San Juan de Miraflores">San Juan de Miraflores</option>
+									</optgroup>
+									<optgroup label="cono sur">
+										<option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+									<option value="Miraflores">Miraflores</option>
+									<option value="San Isidro">San Isidro</option>
+									<option value="Bellavista">Bellavista</option>
+									<option value="Magdalena">Magdalena</option>
+									<option value="Surco">Surco</option>
+									<option value="Lince">Lince</option>
+									</optgroup>
+							</select>
+						</div>
+						<div>
+							<input type="submit" value="Click aqui" >
+						</div>
+						<div>
+							<input type="reset" value="Limpiar" >
+						</div>
+					</form>
+				</div>
+			</section>
+			<section id="contactenos">
+				<div class="contenedor">
+					<h2>Contactenos</h2>
+				</div>
+			</section>
+		</main>
+		<!--<footer>
+			Derechos reservados - 2019
+		</footer>
+		-->
+		<footer>
+			<div class="contenedor">
+				Derechos reservados - 2019
+			</div>
+		</footer>
+	</body>
+</html>

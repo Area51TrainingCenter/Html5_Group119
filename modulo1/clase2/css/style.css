@@ -1,0 +1,148 @@
+*{
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+
+a{
+	display: inline-block;
+}
+
+section
+{
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+
+h2{
+	text-align: center;
+}
+
+.contenedor
+{
+	width: 1170px;
+	/*
+	acuerdate de mi 
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-left: 10px;*/
+	margin-left: auto;
+	margin-right: auto;
+	/*
+	padding-top: 10px;
+	padding-bottom: 10px;*/
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.columnas
+{
+	margin-left: -1px;
+	margin-right: -1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.columna-50
+{
+	width: 50%;
+}
+
+.imagen-contacto
+{
+	width: 100%;
+}
+
+.form-block
+{
+	width: 100%;
+	display: block;
+	margin-bottom: 15px;
+}
+
+.form-control
+{
+	display: block;
+	width: 100%;
+	padding: 10px 5px 10px 5px;
+}
+
+textarea.form-control
+{
+	height: 100px;
+}
+
+.btn-enviar{
+	background-color: black;
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+	color: white;
+	display: inline-block;
+}
+
+.centrar
+{
+	text-align: center;
+}
+
+.cabecera
+{
+	padding: 15px;
+	text-align: center;
+}
+
+.banner
+{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.banner img
+{
+	width: 100%;
+}
+
+#logo
+{
+	width: 80px;
+	height: auto;
+}
+
+#inicio
+{
+	background-color: black;
+}
+
+#nosotros
+{
+	background-color: #A3AAAE;
+}
+
+#productos
+{
+	background-color: black;
+	color: white;
+}
+
+#servicios
+{
+	background-color: white;
+}
+
+#galeria
+{
+	background-color: white;
+}
+
+#contactenos
+{
+	background-color: #A3AAAE;
+}
+

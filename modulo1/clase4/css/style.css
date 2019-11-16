@@ -22,7 +22,7 @@ h2{
 	
 }
 
-.contenedor
+.contenedor,.contenedor-full
 {
 	width: 1170px;
 	/*
@@ -40,6 +40,17 @@ h2{
 	padding-left: 15px;
 }
 
+.contenedor-full
+{
+	width: 100%;
+}
+
+.fila
+{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
 .columnas
 {
 	margin-left: -1.6px;
@@ -52,8 +63,12 @@ h2{
 
 .sinpadding
 {
-	padding-left: 0;
-	padding-right: 0;
+	padding:0;
+}
+
+.columna-100
+{
+	width: 100%;
 }
 
 .columna-50
@@ -79,6 +94,7 @@ header.cabecera
 	top: 0;
 	left: 0;
 	width: 100%;
+	z-index: 9999;
 }
 
 header.cabecera .logo
@@ -127,6 +143,108 @@ header.cabecera .menu a
 	margin-right: auto;
 	text-decoration: none;
 	font-size: 20px;
+}
+
+#inicio
+{
+	background-color: #000;
+	height: 100vh;
+	position: relative;
+}
+
+#inicio img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+}
+
+#inicio .contenedor
+{
+	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+}
+
+#inicio h1
+{
+	color: #fff;
+	font-size: 60px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+#inicio p
+{
+	color: #fff;
+}
+
+#inicio .boton
+{
+	background-color: #000;
+	padding: 15px 25px;
+	color: #ffff;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+#quienessomos
+{
+	background-color: #fff;
+}
+
+#quienessomos .contenido
+{
+	padding: 100px 60px;
+}
+
+#quienessomos h2
+{
+	font-size: 40px;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+#quienessomos p
+{
+	font-size: 15px;
+}
+
+#quienessomos .contenido-imagen
+{
+	position: relative;
+	padding-bottom: 75%;
+	width: 100%;
+}
+
+#quienessomos .contenido-imagen img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+}
+
+#productos
+{
+	background-color: #ddd;
+}
+
+#productos h2
+{
+	margin-top: 0;
+	margin-bottom: 45px;
 }
 
 

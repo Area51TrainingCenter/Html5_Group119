@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+
+		section{
+			height: 100vh;
+			position: relative;
+		}
+
+		body
+		{
+			margin: 0;
+			padding: 0;
+		}
+
+		.cuadrado
+		{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: absolute;
+			left: 0;
+			top: 0;
+			animation-name: giro;
+			animation-timing-function: ease-in;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+		}
+
+
+
+		.cuadrado:hover
+		{
+			animation-play-state: paused;
+		}
+
+		@keyframes giro{
+			0%{
+				left: 0;
+				top: 0;
+				background-color: red;
+				transform: translate(0,0);	
+			}
+
+			25%{
+				left: 100%;
+				top: 0;
+				background-color: blue;
+				transform: translate(-100%,0);
+			}
+
+			50%{
+				left: 100%;
+				top: 100%;
+				background-color: green;
+				transform: translate(-100%,-100%);	
+			}
+
+			75%{
+				left: 0;
+				top: 100%;
+				background-color: yellow;
+				transform: translate(0,-100%);	
+			}
+
+			100%{
+				left: 0;
+				top: 0;
+				background-color: red;
+				transform: translate(0,0);	
+			}
+
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div class="cuadrado"></div>
+	</section>
+</body>
+</html>

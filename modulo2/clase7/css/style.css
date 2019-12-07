@@ -1,3 +1,25 @@
+@font-face {
+	font-family: 'red-october';
+	src: url('../fonts/red-october.eot');
+	src: local('☺'), 
+	url('../fonts/red-october.woff') format('woff'), 
+	url('../fonts/red-october.ttf') format('truetype'), 
+	url('../fonts/red-october.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'red-october';
+	src: url('../fonts/red-october-fat.eot');
+	src: local('☺'), 
+	url('../fonts/red-october-fat.woff') format('woff'), 
+	url('../fonts/red-october-fat.ttf') format('truetype'), 
+	url('../fonts/red-october-fat.svg') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
+
 *{
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -19,7 +41,7 @@ html
 
 body
 {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'red-october', sans-serif;
 	font-size: 0.95rem;
 }
 
@@ -248,10 +270,21 @@ header.cabecera .menu a:last-child
 
 #inicio h1
 {
-	color: #fff;
+	color: white;
 	font-size: 4rem;
 	margin-top: 0;
 	margin-bottom: 10px;
+	/*text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);*/
+	/*-webkit-text-stroke: 2px  black;*/
+
+	text-shadow: 
+	0px 0px 0px black,
+	1px 0px 0px black,
+	1px 1px 1px black,
+	0px 0px 1px black,
+	0px 1px 1px black,
+	1px 1px 0px black,
+	1px 0px 1px black;
 }
 
 
@@ -331,6 +364,85 @@ header.cabecera .menu a:last-child
 .saltarina:hover
 {
 	animation-play-state: paused;
+}
+
+.redes-fjas
+{
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	left: 0;
+	top:50%;
+	transform: translateY(-50%);
+	z-index: 9999;
+}
+
+.redes-fjas a
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	width: 4rem;
+	height: 4rem;
+	color: #fff;
+	text-decoration: none;
+	background-color: black;
+	font-size: 1.5rem;
+	opacity: .5;
+	filter: grayscale(1);
+	transition: all .4s ease-in;
+}
+
+.redes-fjas a:hover
+{
+	opacity: 1;
+	filter: grayscale(0);
+}
+
+.redes-fjas a i
+{
+	display: inline-block;
+	transform: rotate(-90deg);
+	transition: all .4s ease-in;
+}
+
+
+.redes-fjas a:hover i
+{
+	transform: rotate(0deg) scale(1.5);
+}
+
+.redes-fjas a.fb
+{
+	background-color: #4267B2;
+}
+
+.redes-fjas a.ig
+{
+	background-image: linear-gradient(to top right,#405DE6,#5851DB,#C13584,#E1306C,#FD1D1D,#F56040,#F77737,#FCAF45,#FFDC80)
+}
+
+.redes-fjas a.tw
+{
+	background-color: #1DA1F2;
+}
+
+.redes-fjas a.yt
+{
+	background-color: #FF0000;
+}
+
+#presentacion
+{
+	color: white;
+	text-align: center;
+/*	background-image: url(../img/oficina.jpg);*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: linear-gradient(45deg, rgba(0,0,0,0.8), rgba(163,170,174,.8) 33%,rgba(249,246,239,.8) 66%),url(../img/oficina.jpg); ;
 }
 
 #quienessomos
@@ -524,6 +636,13 @@ header.cabecera .menu a:last-child
 	padding-right: 45px;
 	padding-left: 45px;
 	padding-top: 45px;
+	transition: all .2s ease-in;
+}
+
+#servicios .adentro:hover
+{
+	border-radius: 1.5rem;
+	box-shadow: .5px .5px 20px 2px rgba(0,0,0,.5);
 }
 
 

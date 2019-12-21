@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			padding: 0;
+			margin: 0;
+		}
+
+		section
+		{
+			width: 33%;
+			padding: 30px;
+			margin: 0 auto;
+
+		}
+
+		.bloque-texto
+		{
+			width: 100%;
+			margin-bottom: 15px;
+		}
+
+		.bloque-texto input
+		{
+			width: 100%;
+			padding: 5px;
+			text-align: right;
+			font-size: 20p;
+		}
+
+		.bloque-botones
+		{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.bloque-numero
+		{
+			width: 75%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.bloque-numero .boton
+		{
+			width: 33%;
+		}
+
+		.bloque-simbolos
+		{
+			width: 25%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.bloque-simbolos .boton
+		{
+			width: 100%;
+		}
+
+
+		.boton
+		{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			font-size: 20px;
+			background-color: #ccc;
+			border: 1px solid #eee;
+			cursor: pointer;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+
+	<section>
+		<div class="bloque-texto">
+			<input type="text" name="numero" id="resultado" placeholder="0">
+		</div>
+		<div class="bloque-botones">
+			<div class="bloque-numero">
+				<div class="boton" onclick="crearnumero(1)">1</div>
+				<div class="boton" onclick="crearnumero(2)">2</div>
+				<div class="boton" onclick="crearnumero(3)">3</div>
+				<div class="boton" onclick="crearnumero(4)">4</div>
+				<div class="boton" onclick="crearnumero(5)">5</div>
+				<div class="boton" onclick="crearnumero(6)">6</div>
+				<div class="boton" onclick="crearnumero(7)">7</div>
+				<div class="boton" onclick="crearnumero(8)">8</div>
+				<div class="boton" onclick="crearnumero(9)">9</div>
+				<div class="boton" onclick="limpiar()">CE</div>
+				<div class="boton" onclick="crearnumero(0)">0</div>
+				<div class="boton" onclick="igual()">=</div>
+			</div>
+			<div class="bloque-simbolos">
+				<div class="boton" onclick="operacion('sumar')">+</div>
+				<div class="boton" onclick="operacion('restar')">-</div>
+				<div class="boton" onclick="operacion('multiplicar')">x</div>
+				<div class="boton" onclick="operacion('dividir')">/</div>
+			</div>
+		</div>
+	</section>
+	<script src="js/calculadora.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+
+		body
+		{
+			padding: 0;
+			margin: 0;
+		}
+
+		section
+		{
+			width: 50%;
+			margin: 0 auto;
+		}
+
+		form{
+			padding: 40px;
+			background-color: #ccc;
+		}
+
+		.form-bloque
+		{
+			display: block;margin-bottom: 10px;
+		}
+
+		.form-bloque:last-child
+		{
+			margin-bottom: 0;
+		}
+
+		.form-bloque input
+		{
+			width: 100%;
+			display: block;
+			height: 40px;
+			border: 1px solid black;
+			font-size: 20px;
+		}
+
+
+		.form-bloque input[type="submit"]
+		{
+			width: 100%;
+			color: white;
+			height: 40px;
+			border:none;
+			padding: 10px 5px;
+			background-color: red;
+		}
+	</style>
+	<script src="js/jquery.js"></script>
+</head>
+<body>
+
+	<section>
+		<form action="login.php" method="post" id="frmlogin">
+			<div class="form-bloque">
+				<input type="text" name="user" id="user">
+			</div>
+			<div class="form-bloque">
+				<input type="password" name="pass" id="pass">
+			</div>
+			<div class="form-bloque">
+				<input type="submit" value="ENVIAR">
+			</div>
+		</form>
+	</section>
+
+<script src="js/funciones.js"></script>
+</body>
+</html>

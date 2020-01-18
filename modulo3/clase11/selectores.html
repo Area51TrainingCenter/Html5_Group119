@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+
+		body
+		{
+			padding: 0;
+			margin: 0;
+		}
+
+		.cuadrado
+		{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			color: #fff;
+			margin-bottom: 15px;
+		}
+
+		.cuadrado div
+		{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			
+
+		}
+
+		.cuadrado .texto
+		{
+			color: yellow;
+
+		}
+
+		.circulo
+		{
+			width: 100px;
+			height: 100px;
+			border-radius: 100px;
+			background-color: green;
+			display: none;
+		}
+
+		.circulo div
+		{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+		}
+
+
+	</style>
+	<script src="js/jquery.js"></script>
+</head>
+<body>
+
+<div class="cuadrado" id="cuadrado1">
+	<div>
+		Hola mundo 1
+	</div>
+	<div>
+		Hola mundo 1
+	</div>
+</div>
+<div class="cuadrado" id="cuadrado2">
+	<div>
+		Hola mundo 2
+	</div>
+		<div>
+		Hola mundo 2
+	</div>
+</div>
+<div class="cuadrado" id="cuadrado3">
+	<div>
+		Hola mundo 3
+	</div>
+	<div>
+		Hola mundo 3
+	</div>
+</div>
+<hr>
+<div class="circulo" >
+	<div>
+		Circulo 1
+	</div>
+</div>
+<div class="circulo" >
+	<div>
+		Circulo 2
+	</div>
+</div>
+<div class="circulo" >
+	<div>
+		Circulo 3
+	</div>
+</div>
+
+<a href="#" class="siguiente">Siguiente</a>
+<a href="#" class="todoslossiguientes">Todos los siguientes</a>
+<a href="#" class="seleccionarporindice">Seleccionar por indice</a>
+<a href="#" class="buscar">Buscar</a>
+<a href="#" class="seleccionarancestro">Seleccionar ancestro</a>
+
+<script src="js/selectores.js"></script>
+</body>
+</html>

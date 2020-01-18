@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			margin: 0;
+			padding: 0;
+		}
+
+		.trama
+		{
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.5);
+			top: 0;
+			left: 0;
+			display: none;
+		}
+
+		.trama.abierto
+		{
+			display: block;
+		}
+
+		.contenedor-img
+		{
+			position: absolute;
+			width: 80%;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			display: none;
+		}
+
+		.contenedor-img.abierto
+		{
+			display: block;
+		}
+
+		.contenedor-img img
+		{
+			width: 100%;
+			height: auto;
+		}
+
+		.contenedor-img .cerrar
+		{
+			position: absolute;
+			background-color: red;
+			border-radius: 100px;
+			width: 40px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 30px;
+			color: white;
+			text-decoration: none;
+			top: -20px;
+			right: -20px;
+		}
+	</style>
+	<script src="js/jquery.js"></script>
+</head>
+<body>
+	<a href="img/paisaje.jpg" class="abrirlightbox">abrir</a>
+	<div class="trama"></div>
+	<div class="contenedor-img">
+		<img src="">
+		<a href="#" class="cerrar">X</a>
+	</div>
+	<script src="js/lightbox.js"></script>
+</body>
+</html>
